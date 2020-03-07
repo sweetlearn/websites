@@ -12,9 +12,4 @@ def home(request):
 def add(request):
     template_name = "result.html"
 
-    num1 = int(input("Add first Number: "))
-    num2 = int(input("Add scand Number: "))
-
-    total = num1 + num2
-
-    return render(request, template_name, result='total')
+    return render(request, template_name, context=None)
