@@ -1,12 +1,10 @@
- <!DOCTYPE html>
-<html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
 
-<h1>This is a Blog</h1>
-<p>This is a home page.</p>
+{% block content %}
+<h1>Hello ....</h1>
 
-</body>
-</html> 
+<form action = ''>
+Number 1 : <input type = "text" name = "num1">
+number 2 : <input type = "text" name = "num1">
+<input type="submit" type="submit">
+{% endblock %}
