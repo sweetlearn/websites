@@ -13,3 +13,8 @@ def add(request):
     template_name = "result.html"
 
     return render(request, template_name, context=None)
+
+def contact(request):
+    template_name = "contact.html"
+
+    return render(request, template_name, context=None)

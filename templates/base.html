@@ -17,13 +17,13 @@
          <div class="collapse navbar-collapse" id="navbarsExample05">
             <ul class="navbar-nav mr-auto">
                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="#">Result</a>
+                  <a class="nav-link" href="{% url 'result' %}">Result</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="{% url 'contact'%}">Contact</a>
                </li>
                <li class="nav-item">
                   <a class="nav-link" href="#">Forms</a>
@@ -54,7 +54,7 @@
       </div>
       <hr class="featurette-divider">
       <!--start -->
-      <div class="container bg-light">
+      {% comment %} <div class="container bg-light">
          <div class="row">
             <div class="col-md-4 order-md-2 mb-4">
                <h4 class="d-flex justify-content-between align-items-center mb-3">
@@ -245,7 +245,7 @@
                </form>
             </div>
          </div>
-      </div>
+      </div> {% endcomment %}
       <!-- end -->
       <hr class="featurette-divider">
       <footer class="container">
