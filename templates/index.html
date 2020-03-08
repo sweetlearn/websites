@@ -4,7 +4,16 @@
 <h1>Hello ....</h1>
 
 <form action = ''>
-Number 1 : <input type = "text" name = "num1">
-number 2 : <input type = "text" name = "num1">
-<input type="submit" type="submit">
+<div class="form-row align-items-center">
+    <div class="col-auto">
+      <label class="sr-only" for="inlineFormInput">Name</label>
+      <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Number 1">
+    </div>
+
+    <div class="col-auto">
+      <label class="sr-only" for="inlineFormInput">Name</label>
+      <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Number 2">
+    </div>
+
+<button type="submit" class="btn btn-primary mb-2">Submit</button>
 {% endblock %}
